@@ -307,6 +307,19 @@ h5 {
 <style>
 @import '~easymde/dist/easymde.min.css';
 
+.EasyMDEContainer .CodeMirror {
+	padding: 0;
+	border: 0;
+}
+
+.CodeMirror-lines {
+	padding: 0;
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+	padding: 0;
+}
+
 .vue-easymde, .CodeMirror {
 	border: none;
 	margin: 0;
@@ -325,7 +338,7 @@ h5 {
 }
 
 .CodeMirror-selected,
-.CodeMirror-line::selection, .CodeMirror-line>span::selection, .CodeMirror-line>span>span::selection {
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
 	background: var(--color-primary-element) !important;
 	color: var(--color-primary-text) !important;
 }
